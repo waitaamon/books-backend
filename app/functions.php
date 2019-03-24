@@ -7,7 +7,20 @@
  */
 
 if(!function_exists('extract_data')) {
-    function extractdata () {
-        return 'am here';
+    function extractdata ($items) {
+
+        $itm = [];
+
+        if(gettype($items) == 'string') {
+            foreach (json_decode($items) as $item) {
+                array_push($itm, $item->value);
+            }
+        }else if(gettype($items) == 'array') {
+            foreach ($items as $item) {
+                array_push($itm, $item['value']);
+            }
+        }
+
+        return $itm;
     }
 }
