@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Tymon\JWTAuth\JWTAuth;
 
-class LogoutController extends Controller
+class UserController extends Controller
 {
     /**
      * @var JWTAuth
@@ -22,10 +22,9 @@ class LogoutController extends Controller
         $this->auth = $auth;
     }
 
-    public function index()
-    {
-        $this->auth->invalidate($this->auth->getToken());
-
-        return response( null, 200);
+    public function index(Request $request) {
+        return response()->json([
+            'data' => $request->user()
+        ]);
     }
 }

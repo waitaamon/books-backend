@@ -15,8 +15,8 @@ class CreateBookGenre extends Migration
     {
         Schema::create('book_genre', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('book_id')->unsigned();
-            $table->integer('genre_id')->unsigned();
+            $table->bigInteger('book_id')->unsigned();
+            $table->bigInteger('genre_id')->unsigned();
 
             $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
             $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');

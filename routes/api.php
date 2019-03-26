@@ -13,14 +13,26 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/register', 'auth\RegisterController@register');
-Route::post('/login', 'auth\LoginController@login');
+Route::post('/register', 'auth\RegisterController@index');
+Route::post('/login', 'auth\LoginController@index');
 Route::post('/logout', 'auth\LogoutController@logout');
 
 //protect login users
 Route::group(['middleware' => 'jwt.auth'], function (){
 
-    Route::get('/me', 'auth\AuthController@user');
-    Route::get('/timeline', 'TimelineController@index');
+    //authenticated user details
+    Route::get('/me', 'auth\UserController@index');
+
+    //books
+    Route::resource('/books', 'admin\BookController');
+
+    //languages
+    Route::resource('/languages', 'admin\LanguageController');
+
+    //genres
+    Route::resource('/genres', 'admin\GenreController');
+
+    //topics
+    Route::resource('/topics', 'admin\TopicController');
 });
 

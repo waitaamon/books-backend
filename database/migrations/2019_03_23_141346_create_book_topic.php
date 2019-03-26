@@ -15,8 +15,8 @@ class CreateBookTopic extends Migration
     {
         Schema::create('book_topic', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('book_id')->unsigned();
-            $table->integer('topic_id')->unsigned();
+            $table->bigInteger('book_id')->unsigned();
+            $table->bigInteger('topic_id')->unsigned();
 
             $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
