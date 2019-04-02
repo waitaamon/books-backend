@@ -24,9 +24,9 @@ class BookResource extends JsonResource
             'created_at' => $this->created_at,
             'user' => new UserResource($this->user),
             'language' => new LanguageResource($this->language),
-            'topics' => new TopicResource($this->topics),
-            'genres' => new GenreResource($this->genres),
-            'chapters' => new ChapterResource($this->chapters)
+            'topics' => TopicResource::collection($this->topics),
+            'genres' => GenreResource::collection($this->genres),
+            'chapters' => ChapterResource::collection($this->chapters)
         ];
     }
 }

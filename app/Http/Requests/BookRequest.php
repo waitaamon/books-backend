@@ -29,7 +29,7 @@ class BookRequest extends FormRequest
             'publisher' => 'required|string|max:100',
             'language' => 'required|integer|exists:languages,id',
             'genre' => 'required|array',
-            'topics' => 'required|array'
+            'topic' => 'required|array'
         ];
     }
 }

@@ -2,23 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee5bbc5c-9607-4550-9112-e987ec98b26e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Contracts/GalleryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentGalleryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo-alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/animsition.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/perfect-scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/js/animsition.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/js/perfect-scrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/admin/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/web/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/web/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/components/DashboardPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/gallery/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/gallery/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/gallery/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/gallery/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/gallery/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/genres/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/genres/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/genres/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/genres/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/genres/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/languages/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/languages/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/languages/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/languages/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/languages/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/topics/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/topics/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/topics/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/topics/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/topics/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/components/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/auth/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/errors/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/components/Homepage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/vuex/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/vuex/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/vuex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/vuex/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app/web/vuex/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/AuthenticatedView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/UnauthenticatedView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/partials/WebFooter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/partials/WebHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/interceptors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/router/beforeEach.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d77566ac-f4db-4288-8560-e776283dcdb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d77566ac-f4db-4288-8560-e776283dcdb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/auth/LogoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/LogoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/auth/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/BookResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/BookResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_23_134645_create_chapters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_23_134645_create_chapters_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_23_140651_create_book_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_23_140651_create_book_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_23_141346_create_book_topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_23_141346_create_book_topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +149,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="books: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="books@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="books: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="books: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -70,52 +156,109 @@
     <session id="-963955083">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.112" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.open.time.96" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="1" />
-          <entry key="js" value="4" />
-          <entry key="json" value="3" />
-          <entry key="php" value="129" />
+          <entry key="book_topic" value="2" />
+          <entry key="books" value="1" />
+          <entry key="css" value="9" />
+          <entry key="env" value="3" />
+          <entry key="js" value="43" />
+          <entry key="json" value="4" />
+          <entry key="php" value="169" />
           <entry key="sql" value="1" />
+          <entry key="vue" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="1" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="129" />
+          <entry key=".env file" value="3" />
+          <entry key="Blade" value="5" />
+          <entry key="CSS" value="9" />
+          <entry key="Database Element" value="3" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="43" />
+          <entry key="PHP" value="164" />
           <entry key="Scratch" value="1" />
+          <entry key="Vue.js" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="7" />
           <entry key="dummy" value="3" />
-          <entry key="env" value="35" />
+          <entry key="env" value="60" />
+          <entry key="js" value="512" />
           <entry key="json" value="34" />
-          <entry key="php" value="4407" />
+          <entry key="php" value="5907" />
           <entry key="txt" value="5" />
+          <entry key="vue" value="933" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="35" />
+          <entry key=".env file" value="60" />
+          <entry key="Blade" value="66" />
+          <entry key="CSS" value="20" />
           <entry key="JSON" value="34" />
-          <entry key="PHP" value="4407" />
+          <entry key="JavaScript" value="512" />
+          <entry key="PHP" value="5838" />
           <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Vue.js" value="923" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SpaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>etClientRects</find>
+      <find>load</find>
+      <find>on</find>
+      <find>length</find>
+      <find>nav-t</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,44 +266,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Genre.php" />
-        <option value="$PROJECT_DIR$/app/Models/Chapter.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_23_141325_create_topics_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Topics.php" />
-        <option value="$PROJECT_DIR$/app/Models/Book.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Contracts/TopicRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Contracts/GenreRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Contracts/LanguageRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentGenreRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentLanguageRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentTopicRepository.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/UserResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/GenreResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/LanguageResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ChapterResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/BookResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" />
-        <option value="$PROJECT_DIR$/app/functions.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Contracts/ChapterRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentChapterRepository.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/GenreRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/LanguageRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/GenreController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/TopicController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/LanguageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/LoginFormRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/GenresTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LanguagesTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/TopicsTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -169,11 +274,49 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_03_23_141346_create_book_topic.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/auth/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/auth/LogoutController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/auth/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/jwt.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/auth/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/BookResource.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Contracts/GalleryRepository.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentGalleryRepository.php" />
+        <option value="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_26_071033_create_galleries_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/GalleryResource.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/GalleryRequest.php" />
+        <option value="$PROJECT_DIR$/app/Models/Gallery.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/GalleryController.php" />
+        <option value="$PROJECT_DIR$/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/AuthenticatedView.vue" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/js/components/App.vue" />
+        <option value="$PROJECT_DIR$/resources/sass/web/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/public/vendors/web/jquery.stellar.min.js" />
+        <option value="$PROJECT_DIR$/public/vendors/web/main.js" />
+        <option value="$PROJECT_DIR$/public/vendors/web/style.css" />
+        <option value="$PROJECT_DIR$/resources/js/components/partials/WebFooter.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/UnauthenticatedView.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/partials/WebHeader.vue" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/components/index.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/actions.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/getters.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/mutations.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/state.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/index.js" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/router/index.js" />
+        <option value="$PROJECT_DIR$/resources/js/interceptors.js" />
+        <option value="$PROJECT_DIR$/resources/js/app/auth/components/Login.vue" />
+        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/routes/index.js" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SpaController.php" />
       </list>
     </option>
   </component>
@@ -184,6 +327,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -276,13 +422,24 @@
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/pdf-to-image" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/league/glide" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="406" />
-    <option name="y" value="302" />
-    <option name="width" value="882" />
-    <option name="height" value="494" />
+    <option name="x" value="-93" />
+    <option name="y" value="156" />
+    <option name="width" value="1894" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -299,6 +456,17 @@
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -308,20 +476,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/routes/api.php&#10;api&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/routes/api.php&#10;LanguageRe&#9;null&#9;null&#10;Genre&#9;null&#9;null&#10;repos&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/app/Providers/RepositoryServiceProvider.php&#10;Repo&#9;null&#9;null&#10;helper&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="spac&#9;null&#9;null&#10;web&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/routes/web.php&#10;Gall&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/app/Models/Gallery.php&#10;api&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/routes/api.php&#10;galleryc&#9;null&#9;null&#10;repos&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/app/Providers/RepositoryServiceProvider.php&#10;galleries&#9;FILE&#9;file:///media/amon/computer1/Dev/code/leon/books/backend/database/migrations/2019_03_26_071033_create_galleries_table.php&#10;LanguageRe&#9;null&#9;null&#10;Genre&#9;null&#9;null&#10;Repo&#9;null&#9;null&#10;helper&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/vendors/css" />
       <recent name="$PROJECT_DIR$/app/Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Repositories/Eloquent" />
-      <recent name="$PROJECT_DIR$/app/Repositories/Contracts" />
-      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/public/vendors/admin/css" />
+      <recent name="$PROJECT_DIR$/public/vendors/admin/js" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex" />
+      <recent name="$PROJECT_DIR$/public/vendors/web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,17 +520,23 @@
       <updated>1553346320804</updated>
       <workItem from="1553346322933" duration="10016000" />
       <workItem from="1553412090209" duration="16275000" />
-      <workItem from="1553576185255" duration="233000" />
+      <workItem from="1553576185255" duration="9101000" />
+      <workItem from="1553610469362" duration="10000" />
+      <workItem from="1553658478950" duration="111000" />
+      <workItem from="1553922998910" duration="1797000" />
+      <workItem from="1554023334427" duration="1424000" />
+      <workItem from="1554102874581" duration="11609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26524000" />
+    <option name="totallyTimeSpent" value="50343000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="750" extended-state="6" />
+    <frame x="-4" y="156" width="1374" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24166666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22424242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -373,12 +551,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924242" visible="true" weight="0.26633987" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007576" side_tool="true" weight="0.26633987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848485" visible="true" weight="0.40849674" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50151515" side_tool="true" visible="true" weight="0.40849674" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32843137" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="3" weight="0.225" />
     </layout>
     <layout-to-restore>
       <window_info id="npm" order="0" side_tool="true" />
@@ -411,352 +590,316 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserResource.php">
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="33">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ChapterResource.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/GalleryRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="282">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/BookResource.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="-240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/functions.php">
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="13">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/GalleryResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="365">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Chapter.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/GalleryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="76" />
+        <state relative-caret-position="365">
+          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Contracts/ChapterRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/web/vuex/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Eloquent/EloquentChapterRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/TopicRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/GenreRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="101" column="46" lean-forward="true" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/GenreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="123" column="57" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/LanguageController.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/AuthenticatedView.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/TopicController.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="98" column="16" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="98" selection-end-column="16" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/RepositoryAbstract.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#162#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/web/jquery.stellar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="12458" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/web/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/partials/WebFooter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding>
+            <element signature="e#4428#4434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/partials/WebHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/UnauthenticatedView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#97#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/auth/components/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/mutations.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/getters.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/actions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/auth/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_134150_create_languages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_134151_create_genres_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/app/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="51" />
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="96" selection-start-line="2" selection-start-column="96" selection-end-line="2" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/helpers/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/router/beforeEach.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="63">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#50#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/LoginFormRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/cors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/GenresTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/TopicsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/LanguagesTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/app/auth/components/Login.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_140651_create_book_genre.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="123">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_141346_create_book_topic.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/interceptors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_141325_create_topics_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="90">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_134645_create_chapters_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_134157_create_books_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d77566ac-f4db-4288-8560-e776283dcdb4/console.sql">
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/animsition.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/auth/UserController.php">
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/animsition.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/hamburgers.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/slick.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/wow.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/perfect-scrollbar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/slick.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="-5490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/perfect-scrollbar.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendors/admin/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/auth/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="90">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/auth/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/auth/LogoutController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SpaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Eloquent/EloquentBookRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Contracts/BookRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="176" column="47" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/jwt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/LanguageRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/BookRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="123">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>

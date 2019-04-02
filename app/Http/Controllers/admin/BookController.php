@@ -45,9 +45,9 @@ class BookController extends Controller
     {
         //save book
         $book = $this->books->create([
-            'user_id' => auth()->id,
+            'user_id' => auth()->id(),
             'title' => $request->title,
-            'slug' => str_slug($request->slug),
+            'slug' => str_slug($request->title),
             'author' => $request->author,
             'publisher' => $request->publisher,
             'language_id' => $request->language
@@ -64,10 +64,10 @@ class BookController extends Controller
         }
 
         //save topics
-        $this->books->sync($book->id, 'topics', extractdata($request->topics));
+        $this->books->sync($book->id, 'topics', $request->topic);
 
         //save genres
-        $this->books->sync($book->id, 'genres', extractdata($request->genres));
+        $this->books->sync($book->id, 'genres', $request->genre);
 
         return response()->json([
             'message' => 'success'

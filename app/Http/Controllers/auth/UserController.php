@@ -22,9 +22,13 @@ class UserController extends Controller
         $this->auth = $auth;
     }
 
-    public function index(Request $request) {
-        return response()->json([
-            'data' => $request->user()
-        ]);
+    /**
+     * logged in user details
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
+    public function index(Request $request)
+    {
+        return response($request->user(), 200);
     }
 }

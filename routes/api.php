@@ -34,5 +34,8 @@ Route::group(['middleware' => 'jwt.auth'], function (){
 
     //topics
     Route::resource('/topics', 'admin\TopicController');
+
+    //gallery images
+    Route::resource('/images', 'admin\GalleryController');
 });
 
