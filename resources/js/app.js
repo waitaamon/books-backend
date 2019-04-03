@@ -18,9 +18,7 @@ window.Vue = require('vue');
 Vue.component('app', require('./components/App.vue').default);
 
 store.dispatch('auth/setToken').then(() => {
-
     store.dispatch('auth/fetchUser').catch(() => {
-
         //clear auth
         store.dispatch('auth/clearAuth')
         router.replace({ name: 'login'})

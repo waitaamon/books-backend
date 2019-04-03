@@ -18,14 +18,12 @@ mix.js('resources/js/app.js', 'public/js')
     .scripts([
         'public/vendors/admin/js/slick.min.js',
         'public/vendors/admin/js/wow.min.js',
-        'public/vendors/admin/js/animsition.min.js',
         'public/vendors/admin/js/perfect-scrollbar.min.js',
         'public/vendors/admin/js/main.js'
     ], 'public/js/admin.js')
     .sass('resources/sass/app.scss', 'public/css')
     .styles(['public/vendors/web/style.css'], 'public/css/main.css')
     .styles([
-        'public/vendors/admin/css/animsition.min.css',
         'public/vendors/admin/css/animate.css',
         'public/vendors/admin/css/hamburgers.min.css',
         'public/vendors/admin/css/slick.css',
