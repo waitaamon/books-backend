@@ -16,6 +16,10 @@
                                 <input id="sub_title" type="text" class="form-control" aria-required="true" aria-invalid="false" v-model="form.sub_title">
                                 <small class="text-danger" v-if="errors.sub_title">{{errors.sub_title[0]}}</small>
                             </div>
+                            <div class="mt-5 pt-5">
+                                <tinymce id="editor" v-model="form.body"></tinymce>
+                                <small class="text-danger" v-if="errors.body">{{errors.body[0]}}</small>
+                            </div>
                             <div>
                                 <button type="submit" class="btn btn-info">
                                     Submit
@@ -30,17 +34,21 @@
 </template>
 
 <script>
+    import tinymce from 'vue-tinymce-editor'
     import {mapGetters, mapActions} from 'vuex'
-
     export default {
         name: 'create-chapter',
+        components: {
+            tinymce
+        },
         data() {
             return {
                 form: {
                     title: '',
                     sub_title: '',
                     body: '',
-                    is_live: false
+                    is_live: false,
+                    book_id: this.$route.query.ref
                 }
             }
         },
@@ -50,7 +58,16 @@
             })
         },
         methods: {
-            ...mapActions({})
+            ...mapActions({
+                addChapter: 'chapter/addChapter'
+            }),
+            submit () {
+                console.log(this.form)
+                this.addChapter(this.form)
+                    .then(() => {
+                        this.$toastr('success', 'Successfully added chapter.')
+                    })
+            }
         }
     }
 </script>

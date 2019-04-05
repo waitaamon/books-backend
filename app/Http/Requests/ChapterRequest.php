@@ -26,6 +26,8 @@ class ChapterRequest extends FormRequest
         return [
             'book_id' => 'required|integer|exist:books,id',
             'title' => 'required|string|max:255',
+            'order' => 'required|integer',
+            'is_live' => 'required|boolean',
             'sub_title' => 'required|string|max:255',
             'body' => 'required|string',
         ];

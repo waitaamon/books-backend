@@ -2,44 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee5bbc5c-9607-4550-9112-e987ec98b26e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/components/CreateBook.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/components/EditBook.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/books/components/ShowBook.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/components/EditChapter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/utils/VuetableCssBootstrap4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d77566ac-f4db-4288-8560-e776283dcdb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d77566ac-f4db-4288-8560-e776283dcdb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/TopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/TopicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BookRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/books/components/BooksPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/books/components/BooksPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/books/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/books/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/books/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/books/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/books/vuex/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/getters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/getters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +63,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="-872">
+              <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+              <folding>
+                <element signature="e#1724#1764#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -108,6 +120,7 @@
       <find>on</find>
       <find>length</find>
       <find>nav-t</find>
+      <find>chap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,9 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/vuex/state.js" />
-        <option value="$PROJECT_DIR$/resources/js/router/index.js" />
-        <option value="$PROJECT_DIR$/resources/js/interceptors.js" />
         <option value="$PROJECT_DIR$/resources/js/app/auth/components/Login.vue" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/dashboard/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -136,7 +146,6 @@
         <option value="$PROJECT_DIR$/resources/js/app/auth/vuex/mutations.js" />
         <option value="$PROJECT_DIR$/resources/js/utils/VuetableCssBootstrap4.js" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/books/components/BookCreate.vue" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/TopicController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/GalleryController.php" />
         <option value="$PROJECT_DIR$/app/Models/Book.php" />
@@ -148,14 +157,12 @@
         <option value="$PROJECT_DIR$/resources/js/app/admin/books/components/BooksPage.vue" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/books/routes/index.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/books/vuex/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/store/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/store/getters.js" />
         <option value="$PROJECT_DIR$/resources/js/store/state.js" />
         <option value="$PROJECT_DIR$/resources/js/store/mutations.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/BookController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/getters.js" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/mutations.js" />
@@ -166,7 +173,13 @@
         <option value="$PROJECT_DIR$/resources/js/app/admin/index.js" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/chapters/routes/index.js" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/books/components/ShowBook.vue" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/store/index.js" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php" />
         <option value="$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php" />
       </list>
     </option>
   </component>
@@ -270,9 +283,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1366" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="1864" />
+    <option name="width" value="902" />
+    <option name="height" value="496" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -322,7 +335,7 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="chapters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
@@ -331,8 +344,8 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="chapters" type="462c0819:PsiDirectoryNode" />
+              <item name="vuex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -378,6 +391,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="CreateChapter.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/backend/resources/js/app/admin/chapters/components/CreateChapter.vue" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.CreateChapter.vue" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -400,12 +423,12 @@
       <workItem from="1554354736665" duration="1139000" />
       <workItem from="1554357085169" duration="3119000" />
       <workItem from="1554361668484" duration="23377000" />
-      <workItem from="1554442895514" duration="1231000" />
+      <workItem from="1554442895514" duration="6444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92932000" />
+    <option name="totallyTimeSpent" value="98145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1920" height="1080" extended-state="6" />
@@ -417,7 +440,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -425,8 +448,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="NativeScript" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49772727" visible="true" weight="0.15966387" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5022727" side_tool="true" weight="0.24346405" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49733192" visible="true" weight="0.15966387" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026681" side_tool="true" weight="0.15966387" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32843137" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -461,34 +484,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/components/partials/HeaderDesktop.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/AuthenticatedView.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/dashboard/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendors/admin/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6179">
-          <caret line="1251" lean-forward="true" selection-start-line="1251" selection-end-line="1251" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -563,16 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#50#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,24 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app/admin/books/vuex/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -747,13 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -826,10 +790,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-358" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_04_174331_add_is_live_to_chapters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app/admin/chapters/components/CreateChapter.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="-872">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+          <folding>
+            <element signature="e#1724#1764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app/admin/chapters/vuex/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ChapterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ChapterRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>

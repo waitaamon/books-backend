@@ -13,6 +13,7 @@ Vue.use(VueToastr, {
     defaultTimeout: 1000
 })
 
+
 Vue.component('app', require('./components/App.vue').default);
 
 store.dispatch('auth/setToken').then(() => {

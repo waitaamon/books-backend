@@ -26,6 +26,9 @@ Route::group(['middleware' => 'jwt.auth'], function (){
     //books
     Route::resource('/books', 'admin\BookController');
 
+    //chapters
+    Route::resource('/chapters', 'admin\ChapterController');
+
     //publish
     Route::post('/book/publish/{id}', 'admin\BookController@publish');
 

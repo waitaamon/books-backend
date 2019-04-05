@@ -15,6 +15,7 @@ class AddIsLiveToChapters extends Migration
     {
         Schema::table('chapters', function (Blueprint $table) {
             $table->boolean('is_live')->default(false)->after('body');
+            $table->integer('order')->after('book_id');
         });
     }
 
@@ -27,6 +28,7 @@ class AddIsLiveToChapters extends Migration
     {
         Schema::table('chapters', function (Blueprint $table) {
             $table->dropColumn('is_live');
+            $table->dropColumn('order');
         });
     }
 }
