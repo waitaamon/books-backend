@@ -1,17 +1,24 @@
-export const addBook = ({ dispatch }, payload) => {
+export const addBook = ({ commit }, payload) => {
   return window.axios.post('/api/books', payload)
     .then(response => {
     // set books
-    dispatch('setBooks', response.data)
+    commit('setBooks', response.data)
   })
 }
-
 export const getBooks = ({ commit }) => {
-  return window.axios.get('/api/books')
-    .then(response => {
-      // set books
-      commit('setBooks', response.data)
-    })
+    return window.axios.get('/api/books')
+        .then(response => {
+            // set books
+            commit('setBooks', response.data)
+        })
+}
+
+export const getBook = ({ commit }, id) => {
+    return window.axios.get('/api/books/' + id)
+        .then(response => {
+            // set book
+            commit('setBook', response.data)
+        })
 }
 
 export const updateBook = ({ commit }, payload) => {
@@ -27,5 +34,13 @@ export const deleteBook = ({ commit }, payload) => {
     .then( response => {
       // set books
       commit('setBooks', response.data)
+    })
+}
+
+export const publish = ({ commit }, payload) => {
+  return window.axios.post('/api/book/publish/' + payload.id, payload)
+    .then( response => {
+      // set book
+      commit('setBook', response.data)
     })
 }

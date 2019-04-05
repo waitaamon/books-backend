@@ -25,7 +25,10 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "@deveodk/vue-toastr": "^1.0.4",
     "localforage": "^1.7.3",
+    "tiptap": "^1.14.0",
+    "vue-multiselect": "^2.1.4",
     "vue-router": "^3.0.2",
     "vuetable-2": "^2.0.0-beta.4",
     "vuex": "^3.1.0"

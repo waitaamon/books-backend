@@ -6,6 +6,7 @@ use App\Http\Requests\GalleryRequest;
 use App\Http\Resources\GalleryResource;
 use App\Repositories\Contracts\GalleryRepository;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 
 class GalleryController extends Controller
 {
@@ -39,7 +40,7 @@ class GalleryController extends Controller
      * Store a newly created gallery in storage.
      *
      * @param GalleryRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function store(GalleryRequest $request)
     {
@@ -71,7 +72,7 @@ class GalleryController extends Controller
      *
      * @param GalleryRequest $request
      * @param  int $id
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function update(GalleryRequest $request, $id)
     {

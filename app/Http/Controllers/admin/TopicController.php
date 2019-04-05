@@ -6,6 +6,7 @@ use App\Http\Requests\TopicRequest;
 use App\Http\Resources\TopicResource;
 use App\Repositories\Contracts\TopicRepository;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
 
 class TopicController extends Controller
 {
@@ -26,7 +27,7 @@ class TopicController extends Controller
     /**
      * Display a listing of the topics.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -40,7 +41,7 @@ class TopicController extends Controller
      * Store a newly created resource in topic.
      *
      * @param TopicRequest $request
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function store(TopicRequest $request)
     {
@@ -66,7 +67,7 @@ class TopicController extends Controller
      *
      * @param TopicRequest $request
      * @param  int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(TopicRequest $request, $id)
     {
@@ -103,7 +104,7 @@ class TopicController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {

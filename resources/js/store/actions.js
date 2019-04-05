@@ -9,7 +9,3 @@ export const clearValidationErrors = ({ commit }) => {
 export const setLoading = ({ commit }, trueOrFalse) => {
     commit('setLoading', trueOrFalse)
 }
-
-export const setSnackBar = ({ commit }, payload) => {
-    commit('setSnackBar', payload)
-}
