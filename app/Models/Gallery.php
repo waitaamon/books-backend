@@ -11,23 +11,13 @@ class Gallery extends Model implements HasMedia
 {
     use HasMediaTrait;
 
-    protected $fillable = ['book_id', 'title'];
-
-    public function book()
-    {
-        return $this->belongsTo(Book::class);
-    }
-
-    public function chapter()
-    {
-        return $this->belongsTo(Chapter::class);
-    }
+    protected $fillable = ['identifier'];
 
     public function registerMediaConversions(Media $media = null)
     {
-        $this->addMediaConversion('thumb')
-            ->width(368)
-            ->height(232)
+        $this->addMediaConversion('thumbnail')
+            ->width(400)
+            ->height(300)
             ->sharpen(10);
     }
 }

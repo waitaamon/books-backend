@@ -8,7 +8,7 @@ import chapter from '../app/admin/chapters/vuex'
 import language from '../app/admin/languages/vuex'
 import genre from '../app/admin/genres/vuex'
 import topic from '../app/admin/topics/vuex'
-import image from '../app/admin/gallery/vuex'
+import gallery from '../app/admin/gallery/vuex'
 
 import state from './state'
 import * as mutations from './mutations'
@@ -30,6 +30,6 @@ export default new Vuex.Store({
     language,
     genre,
     topic,
-    image
+    gallery
   }
 })

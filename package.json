@@ -27,6 +27,7 @@
   "dependencies": {
     "@deveodk/vue-toastr": "^1.0.4",
     "localforage": "^1.7.3",
+    "v-clipboard": "^2.2.2",
     "vue-multiselect": "^2.1.4",
     "vue-router": "^3.0.2",
     "vue-tinymce-editor": "^1.6.2",

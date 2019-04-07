@@ -7,6 +7,8 @@ use App\Http\Resources\GalleryResource;
 use App\Repositories\Contracts\GalleryRepository;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Ramsey\Uuid\Uuid;
 
 class GalleryController extends Controller
 {
@@ -27,7 +29,7 @@ class GalleryController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -41,12 +43,12 @@ class GalleryController extends Controller
      *
      * @param GalleryRequest $request
      * @return JsonResponse
+     * @throws \Exception
      */
     public function store(GalleryRequest $request)
     {
         $item = $this->galleries->create([
-            'book_id' => $request->book,
-            'title' => $request->title
+            'identifier' => Uuid::uuid4()
         ]);
 
         if(!$item) {
@@ -68,50 +70,10 @@ class GalleryController extends Controller
     }
 
     /**
-     * Update the specified gallery in storage.
-     *
-     * @param GalleryRequest $request
-     * @param  int $id
-     * @return JsonResponse
-     */
-    public function update(GalleryRequest $request, $id)
-    {
-        $image = $this->galleries->find($id);
-
-        if(!$image) {
-            return response()->json([
-                'errors' => [
-                    'root' => [
-                        'Could not update image, try again later'
-                    ]
-                ]
-            ], 422);
-        }
-
-        $update = $this->galleries->update([
-            'title' => $request->title
-        ]);
-
-        if(!$update) {
-            return response()->json([
-                'errors' => [
-                    'root' => [
-                        'Could not update image, try again later'
-                    ]
-                ]
-            ], 422);
-        }
-
-        $galleries = $this->galleries->all();
-
-        return response(GalleryResource::collection($galleries), 200);
-    }
-
-    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {

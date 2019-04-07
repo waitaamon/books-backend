@@ -24,9 +24,7 @@ class GalleryRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|file|mimes:jpeg,jpg,png',
-            'book' => 'required|integer|exists:books,id',
-            'title' => 'required|string|max:255',
+            'image' => 'required|file|mimes:jpeg,jpg,png'
         ];
     }
 }

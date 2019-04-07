@@ -1,4 +1,4 @@
-export const addImage = ({ dispatch }, payload) => {
+export const addImage = ({ commit }, payload) => {
   return window.axios.post('/api/images', payload,{
     headers: {
       'Content-Type': 'multipart/form-data'
@@ -6,21 +6,13 @@ export const addImage = ({ dispatch }, payload) => {
   })
     .then(response => {
     // set images
-    dispatch('setImages', response.data)
+    commit('setImages', response.data)
     
   })
 }
 
 export const getImages = ({ commit }) => {
   return window.axios.get('/api/images')
-    .then(response => {
-      // set images
-      commit('setImages', response.data)
-    })
-}
-
-export const updateImage = ({ commit }, payload ) => {
-  return window.axios.patch('/api/images/' + payload.id, payload)
     .then(response => {
       // set images
       commit('setImages', response.data)

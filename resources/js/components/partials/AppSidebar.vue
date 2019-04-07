@@ -1,9 +1,9 @@
 <template>
     <aside class="menu-sidebar d-none d-lg-block">
         <div class="logo">
-            <a href="#">
+            <router-link to="/admin/dashboard">
                 <img src="/images/logo2.png" alt="Cool Admin" />
-            </a>
+            </router-link>
         </div>
         <div class="menu-sidebar__content js-scrollbar1">
             <nav class="navbar-sidebar">
@@ -15,8 +15,8 @@
                         <router-link to="/admin/books"><i class="fas fa-chart-bar"></i>Books</router-link>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fas fa-table"></i>Gallery</a>
+                        <router-link to="/admin/gallery">
+                            <i class="fas fa-table"></i>Gallery</router-link>
                     </li>
                 </ul>
             </nav>

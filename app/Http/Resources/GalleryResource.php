@@ -16,17 +16,16 @@ class GalleryResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'book' => new BookResource($this->book),
+            'uuid' => $this->uuid,
             'url' => $this->when($this !== null, function () {
                 $items = $this->media;
                 return $items[0]->getFullUrl();
             }),
-            'thumb_url' => $this->when($this !== null, function () {
+            'thumbnail' => $this->when($this !== null, function () {
                 $items = $this->media;
-                return $items[0]->getUrl('thumb');
+                return $items[0]->getUrl('thumbnail');
             }),
-            'uploaded_on' => $this->created_at
+            'uploaded_on' => $this->created_at->format('Y-m-d H:i')
         ];
     }
 }

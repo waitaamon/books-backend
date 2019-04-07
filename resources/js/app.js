@@ -3,6 +3,7 @@ require('./interceptors')
 import store from './store'
 import router from './router'
 import VueToastr from '@deveodk/vue-toastr'
+import Clipboard from 'v-clipboard'
 import '@deveodk/vue-toastr/dist/@deveodk/vue-toastr.css'
 
 window.Vue = require('vue');
@@ -12,7 +13,7 @@ Vue.use(VueToastr, {
     defaultType: 'success',
     defaultTimeout: 1000
 })
-
+Vue.use(Clipboard)
 
 Vue.component('app', require('./components/App.vue').default)
 

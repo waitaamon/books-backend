@@ -19,9 +19,9 @@
                         <h3 class="footer-title">Genres</h3>
                         <div class="category-widget">
                             <ul>
-                                <li><a href="#">Lifestyle <span>451</span></a></li>
-                                <li><a href="#">Fashion <span>230</span></a></li>
-                                <li><a href="#">Technology <span>40</span></a></li>
+                                <li><a href="#">Lifestyle <span>1</span></a></li>
+                                <li><a href="#">Fashion <span>2</span></a></li>
+                                <li><a href="#">Technology <span>4</span></a></li>
                             </ul>
                         </div>
                     </div>

@@ -9,7 +9,7 @@
                             <div class="post-category">
                                 <a href="#" v-for="genre in book.genres">{{ genre.title }}</a>
                             </div>
-                            <h3 class="post-title"><a href="">{{ book.title }}</a></h3>
+                            <h3 class="post-title"><router-link :to="{name: 'webBook', query: {ref: book.id, v: book.slug }}">{{ book.title }}</router-link></h3>
                             <ul class="post-meta">
                                 <li><a href="#">{{ book.author}}</a></li>
                                 <li>{{ book.published_on}}</li>

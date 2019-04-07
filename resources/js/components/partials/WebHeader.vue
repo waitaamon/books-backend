@@ -15,7 +15,7 @@
                     <div class="nav-btns">
                         <button class="aside-btn"><i class="fa fa-bars"></i></button>
                         <button class="search-btn"><i class="fa fa-search"></i></button>
-                        <button class="login-btn"><i class="fas fa-sign-in-alt" @click="login"></i></button>
+                        <router-link to="/login" class="login-btn"><i class="fas fa-sign-in-alt"></i></router-link>
                         <div id="nav-search">
                             <form @submit.prevent="search">
                                 <input class="input" name="search" placeholder="Enter your search...">
@@ -29,7 +29,7 @@
             </div>
             <div id="nav-aside">
                 <ul class="nav-aside-menu">
-                    <li><a href="#">Home</a></li>
+                    <li><router-link to="/">Home</router-link></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
@@ -40,18 +40,14 @@
 </template>
 
 <script>
-    import {mapGetters, mapActions} from 'vuex'
+    import {mapActions} from 'vuex'
 
     export default {
         name: 'web-header',
         data() {
             return {}
         },
-        computed: {
-            ...mapGetters({})
-        },
         methods: {
-            ...mapActions({}),
             login() {
                 this.$router.replace({name: 'login'})
             },
