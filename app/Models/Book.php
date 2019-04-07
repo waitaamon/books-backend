@@ -11,7 +11,7 @@ class Book extends Model implements HasMedia
 {
     use HasMediaTrait;
 
-    protected $fillable = ['user_id', 'title', 'slug', 'author', 'publisher', 'language_id', 'is_live'];
+    protected $fillable = ['user_id', 'title', 'slug', 'author', 'publisher','description', 'featured', 'language_id', 'is_live'];
 
     public function language()
     {
@@ -40,9 +40,10 @@ class Book extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null)
     {
-        $this->addMediaConversion('thumb')
-            ->width(368)
-            ->height(232)
-            ->sharpen(10);
+        $this->addMediaConversion('banner')->width(1200)->height(800)->sharpen(10);
+
+        $this->addMediaConversion('post')->width(700)->height(467)->sharpen(10);
+
+        $this->addMediaConversion('thumbnail')->width(368)->height(232)->sharpen(10);
     }
 }

@@ -117,7 +117,7 @@ class GalleryController extends Controller
     {
         $image = $this->galleries->find($id);
 
-        if(!$image && !$image->delete()) {
+        if(!$image || !$image->delete()) {
             return response()->json([
                 'errors' => [
                     'root' => [

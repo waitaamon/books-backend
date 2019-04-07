@@ -24,12 +24,13 @@ class ChapterRequest extends FormRequest
     public function rules()
     {
         return [
-            'book_id' => 'required|integer|exist:books,id',
+            'action' => 'required|string',
+            'book_id' => 'required_if:action,create|integer|exists:books,id',
             'title' => 'required|string|max:255',
             'order' => 'required|integer',
             'is_live' => 'required|boolean',
             'sub_title' => 'required|string|max:255',
-            'body' => 'required|string',
+            'body' => 'required|string'
         ];
     }
 }

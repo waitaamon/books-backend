@@ -110,7 +110,7 @@ class TopicController extends Controller
     {
         $topic = $this->topics->find($id);
 
-        if(!$topic && !$topic->delete()) {
+        if(!$topic || !$topic->delete()) {
             return response()->json([
                 'errors' => [
                     'root' => [

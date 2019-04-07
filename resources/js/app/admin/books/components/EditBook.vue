@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-
+        <p>Edit book</p>
     </div>
 </template>
 

@@ -60,7 +60,7 @@
         submit() {
             this.login(this.form)
                 .then(() => {
-                    this.$router.replace({name: 'dashboard'})
+                    window.location.href = '/admin/dashboard'
                 })
         }
     }

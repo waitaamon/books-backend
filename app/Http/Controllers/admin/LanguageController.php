@@ -6,6 +6,7 @@ use App\Http\Requests\LanguageRequest;
 use App\Http\Resources\LanguageResource;
 use App\Repositories\Contracts\LanguageRepository;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
 
 class LanguageController extends Controller
 {
@@ -25,7 +26,7 @@ class LanguageController extends Controller
     /**
      * Display a listing of the languages.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -38,7 +39,7 @@ class LanguageController extends Controller
      * Store a newly created language in storage.
      *
      * @param LanguageRequest $request
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function store(LanguageRequest $request)
     {
@@ -64,7 +65,7 @@ class LanguageController extends Controller
      *
      * @param LanguageRequest $request
      * @param  int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(LanguageRequest $request, $id)
     {
@@ -101,13 +102,13 @@ class LanguageController extends Controller
      * Remove the specified language from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {
         $language = $this->languages->find($id);
 
-        if(!$language && !$language->delete()) {
+        if(!$language || !$language->delete()) {
             return response()->json([
                 'errors' => [
                     'root' => [

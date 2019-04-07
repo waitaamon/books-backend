@@ -54,6 +54,7 @@ class BookController extends Controller
             'title' => $request->title,
             'slug' => Str::slug($request->title),
             'author' => $request->author,
+            'description' => $request->description,
             'publisher' => $request->publisher,
             'language_id' => $request->language
         ]);
@@ -143,6 +144,7 @@ class BookController extends Controller
             'slug' => Str::slug($request->title) == $book->title ? $book->title : Str::slug($request->title),
             'author' => $request->author == $book->author ? $book->author : $request->author,
             'publisher' => $request->publisher == $book->publisher ? $book->publisher : $request->publisher,
+            'description' => $request->description == $book->description ? $book->description : $request->description,
             'language_id' => $request->language == $book->language ? $book->language : $request->language
         ]);
 
@@ -178,7 +180,7 @@ class BookController extends Controller
     {
         $book = $this->books->find($id);
 
-        if(!$book && !$book->delete()) {
+        if(!$book || !$book->delete()) {
             return response()->json([
                 'errors' => [
                     'root' => [
@@ -215,6 +217,34 @@ class BookController extends Controller
 
         $updated_book = $this->books->update($book->id, [
             'is_live' => $request->action
+        ]);
+
+        $book = $this->books->find($id);
+
+        return response(new BookResource($book), 200);
+    }
+    /**
+     * Feature book
+     * @param Request $request
+     * @param $id
+     * @return ResponseFactory|JsonResponse|Response
+     */
+    public function feature (Request $request, $id) {
+
+        $book = $this->books->find($id);
+
+        if(!$book) {
+            return response()->json([
+                'errors' => [
+                    'root' => [
+                        'Could not feature book, try again later'
+                    ]
+                ]
+            ], 422);
+        }
+
+        $updated_book = $this->books->update($book->id, [
+            'featured' => $request->action
         ]);
 
         $book = $this->books->find($id);

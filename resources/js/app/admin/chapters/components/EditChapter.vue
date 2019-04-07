@@ -1,14 +1,80 @@
 <template>
-    <p>{{ chapter }}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card pb-5">
+                    <div class="card-header">New Chapter</div>
+                    <div class="card-body">
+                        <form method="post" @submit.prevent="submit" >
+                            <div class="form-group">
+                                <label for="title" class="control-label mb-1">Title</label>
+                                <input id="title" type="text" class="form-control" aria-required="true" aria-invalid="false" v-model="form.title">
+                                <small class="text-danger" v-if="errors.title">{{errors.title[0]}}</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="sub_title" class="control-label mb-1">Sub title</label>
+                                <input id="sub_title" type="text" class="form-control" aria-required="true" aria-invalid="false" v-model="form.sub_title">
+                                <small class="text-danger" v-if="errors.sub_title">{{errors.sub_title[0]}}</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="order" class="control-label mb-1">Chapter number</label>
+                                <input id="order" type="number" class="form-control" aria-required="true" aria-invalid="false" v-model="form.order">
+                                <small class="text-danger" v-if="errors.order">{{errors.order[0]}}</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="body" class="control-label mb-1">Body</label>
+                                <textarea id="body" cols="30" class="form-control" v-model="form.body"></textarea>
+                                <small class="text-danger" v-if="errors.body">{{errors.body[0]}}</small>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6 class="h5=6 display-5 mb-2">Publish?</h6>
+                                    <label class="switch switch-3d switch-primary mr-3">
+                                        <input type="checkbox" class="switch-input" v-model="form.is_live">
+                                        <span class="switch-label"></span>
+                                        <span class="switch-handle"></span>
+                                    </label>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <button type="submit" class="btn btn-info">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
-
     export default {
         name: 'edit-page',
         data() {
-            return {}
+            return {
+                form: {
+                    action: 'update',
+                    title: '',
+                    sub_title: '',
+                    order: '',
+                    body: '',
+                    is_live: false,
+                    id: ''
+                }
+            }
+        },
+        watch:{
+            chapter: function(val) {
+                this.form.title = this.chapter.title
+                this.form.sub_title = this.chapter.sub_title
+                this.form.order = this.chapter.order
+                this.form.body = this.chapter.body
+                this.form.is_live = this.chapter.is_live
+                this.form.id = this.chapter.id
+            }
         },
         computed: {
             ...mapGetters({
@@ -18,8 +84,16 @@
         },
         methods: {
             ...mapActions({
-                getChapter: 'chapter/getChapter'
-            })
+                getChapter: 'chapter/getChapter',
+                updateChapter: 'chapter/updateChapter'
+            }),
+            submit () {
+                this.updateChapter(this.form)
+                    .then(() => {
+                        this.$toastr('success', 'Successfully updated chapter.')
+                        this.$router.replace({name: 'showBook', query: { ref: this.chapter.book_id}})
+                    })
+            }
         },
         created() {
             this.getChapter(this.$route.query.ref)

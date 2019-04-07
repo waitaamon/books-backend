@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="top-campaign">
+                <div class="top-campaign" v-if="books.length > 0">
                     <div id="app" class="container">
                         <vuetable ref="vuetable"
                                   :api-mode="false"
@@ -25,10 +25,10 @@
                                 <button class="btn btn-sm btn-success" @click="viewBook(props.rowData)">
                                     <i class="far fa-eye"></i>
                                 </button>
-                                <button class="btn btn-sm btn-primary" @click="onActionClicked('edit-item', props.rowData)">
+                                <button class="btn btn-sm btn-primary" @click="onActionClicked('edit', props.rowData)">
                                     <i class="far fa-edit"></i>
                                 </button>
-                                <button class="btn btn-sm btn-danger" @click="onActionClicked('delete-item', props.rowData)">
+                                <button class="btn btn-sm btn-danger" @click="onActionClicked('delete', props.rowData)">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                             </div>
@@ -38,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+                <p v-else class="text-center">No Books.</p>
             </div>
         </div>
     </div>
@@ -64,7 +65,6 @@
                     },
                     {
                         name: 'title',
-                        title: 'Title',
                         sortField: 'title'
                     },
                     {
@@ -97,7 +97,8 @@
         methods: {
             ...mapActions({
                 getBooks: 'book/getBooks',
-                setBook: 'book/setBook'
+                setBook: 'book/setBook',
+                deleteBook: 'book/deleteBook'
             }),
             onPaginationData(paginationData) {
                 this.$refs.pagination.setPaginationData(paginationData);
@@ -137,7 +138,11 @@
                 this.$router.push({name: 'showBook',  query: { ref: data.id, token: data.slug } })
             },
             onActionClicked(action, data) {
-                console.log("slot actions: on-click", data.name);
+               if(action === 'edit') {
+
+               } else if(action === 'delete') {
+                   this.deleteBook(data.id)
+               }
             }
         },
         created() {

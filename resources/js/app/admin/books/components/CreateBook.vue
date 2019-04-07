@@ -41,6 +41,11 @@
                         <input type="file" id="image" class=" form-control form-control-file" ref="featuredImage" @change="addImage">
                         <small v-if="errors.image" class="help-block text-danger text-sm-left">{{ errors.image[0]}}</small>
                     </div>
+                    <div class="form-group">
+                        <label for="description" class=" form-control-label">Book description</label>
+                        <textarea class="form-control" id="description" v-model="form.description"></textarea>
+                        <small v-if="errors.description" class="help-block text-danger text-sm-left">{{ errors.description[0]}}</small>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary">
@@ -67,6 +72,7 @@
                     author: '',
                     publisher: '',
                     language: '',
+                    description: '',
                     image: '',
                     genres: [],
                     topics: []
@@ -98,6 +104,7 @@
                 formData.append('author', this.form.author)
                 formData.append('publisher', this.form.publisher)
                 formData.append('language', this.form.language.id)
+                formData.append('description', this.form.description)
                 formData.append('genres', this.processSelect(this.form.genres))
                 formData.append('topics', this.processSelect(this.form.topics))
                 formData.append('image', this.form.image)

@@ -10,14 +10,14 @@
                     </ul>
 
                     <div class="nav-logo">
-                        <a href="#" class="logo"><img src="/images/logo.png" alt=""></a>
+                        <router-link to="/" class="logo"><img src="/images/logo.png" alt=""></router-link>
                     </div>
                     <div class="nav-btns">
                         <button class="aside-btn"><i class="fa fa-bars"></i></button>
                         <button class="search-btn"><i class="fa fa-search"></i></button>
                         <button class="login-btn"><i class="fas fa-sign-in-alt" @click="login"></i></button>
                         <div id="nav-search">
-                            <form>
+                            <form @submit.prevent="search">
                                 <input class="input" name="search" placeholder="Enter your search...">
                             </form>
                             <button class="nav-close search-close">
@@ -27,20 +27,11 @@
                     </div>
                 </div>
             </div>
-            <div id="nav-bottom">
-                <div class="container">
-                    <ul class="nav-menu">
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Health</a></li>
-                        <li><a href="#">Travel</a></li>
-                    </ul>
-                </div>
-            </div>
             <div id="nav-aside">
                 <ul class="nav-aside-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
                 <button class="nav-close nav-aside-close"><span></span></button>
             </div>
@@ -63,6 +54,9 @@
             ...mapActions({}),
             login() {
                 this.$router.replace({name: 'login'})
+            },
+            search () {
+                console.log('search')
             }
         }
     }

@@ -20,7 +20,7 @@
                         <p>{{ book ? book.language.title : '' }}</p>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col-md-4">
                         <h6 class="h5=6 display-5 mb-2">Topics</h6>
                         <p v-if="book !== null"> <span v-for=" topic in book.topics"> {{ topic.title }}, </span></p>
@@ -42,15 +42,32 @@
                         </label>
                     </div>
                 </div>
+                <div class="row mb-2">
+                    <div class="col-md-10">
+                        <h6 class="h5=6 display-5 mb-2">Description</h6>
+                        <p class="text-justify">{{ book ? book.description : '' }}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="h5=6 display-5 mb-2">Featured</h6>
+                        <label class="switch switch-3d switch-primary mr-3">
+                            <input type="checkbox" class="switch-input" v-model="featured" @change="changeFeatured">
+                            <span class="switch-label"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
         </div>
         <div class="card mb-3">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-9"></div>
                     <div class="col-md-3">
                         <router-link class="btn btn-block btn-primary" :to="{name: 'createChapter', query: { ref: book ? book.id : '' }}">New Chapter</router-link>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3">
+                        <router-link class="btn btn-block btn-info" :to="{name: 'editBook', query: { ref: book ? book.id : '' }}">Edit Book</router-link>
                     </div>
                 </div>
             </div>
@@ -68,7 +85,7 @@
                     </thead>
                     <tbody>
                     <tr v-for="chapter in book.chapters">
-                        <td>2018-09-29 05:57</td>
+                        <td>{{ chapter.created_at}}</td>
                         <td>{{ chapter.title}}</td>
                         <td>{{ chapter.is_live ? 'true' : 'false'}}</td>
                         <td><router-link class="btn btn-sm btn-secondary" :to="{ name: 'editChapter', query: { ref: chapter.id, slug: chapter.slug }}"><i class="fas fa-eye"></i></router-link></td>
@@ -88,12 +105,14 @@
         name: 'show-book',
         data() {
             return {
-                checked: false
+                checked: false,
+                featured: false
             }
         },
         watch: {
             book: function(val)  {
                 this.checked = this.book ? this.book.is_live : false
+                this.featured = this.book ? this.book.featured : false
             }
         },
         computed: {
@@ -105,13 +124,21 @@
         methods: {
             ...mapActions({
                 getBook: 'book/getBook',
-                publishBook: 'book/publish'
+                publishBook: 'book/publish',
+                featureBook: 'book/featured'
             }),
             publish(event) {
                 let status = event.target.checked
                 this.publishBook({action: status, id: this.book.id})
                     .then(() => {
                         this.$toastr('success', status ? 'Successfully published' : 'Successfully unpublished')
+                    })
+            },
+            changeFeatured(event) {
+                let status = event.target.checked
+                this.featureBook({action: status, id: this.book.id})
+                    .then(() => {
+                        this.$toastr('success', status ? 'Book marked as featured' : 'Successfully unfeatured book')
                     })
             }
         },

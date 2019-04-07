@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Requests\ChapterRequest;
+use App\Http\Resources\ChapterResource;
 use App\Repositories\Contracts\BookRepository;
 use App\Repositories\Contracts\ChapterRepository;
+use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -62,6 +64,28 @@ class ChapterController extends Controller
     }
 
     /**
+     * Shore chapter.
+     * @param $id
+     * @return ResponseFactory|JsonResponse|ResponseAlias
+     */
+    public function show($id)
+    {
+        $chapter = $this->chapters->find($id);
+
+        if(!$chapter) {
+            return response()->json([
+                'errors' => [
+                    'root' => [
+                        'Could not find chapter, try again later!'
+                    ]
+                ]
+            ], 422);
+        }
+
+        return response(new ChapterResource($chapter), 200);
+    }
+
+    /**
      * Update the specified chapter in storage.
      *
      * @param Request $request
@@ -72,9 +96,9 @@ class ChapterController extends Controller
     {
         $chapter = $this->chapters->find($id);
 
-        $update = $this->books->update($chapter->id, [
+        $update = $this->chapters->update($chapter->id, [
             'title' => $request->title == $chapter->title ? $chapter->title : $request->title,
-            'slug' =>  $request->title == $chapter->title ? $request->slug : Str::slug($request->title),
+            'slug' =>  $request->title == $chapter->title ? $chapter->slug : Str::slug($request->title),
             'sub_title' => $request->sub_title == $chapter->sub_title ? $chapter->sub_title : $request->sub_title,
             'order' => $request->order == $chapter->order ? $chapter->order : $request->order,
             'is_live' => $request->is_live == $chapter->is_live ? $chapter->is_live : $request->is_live,
@@ -92,7 +116,8 @@ class ChapterController extends Controller
         }
 
         return response()->json([
-            'message' => 'success'
+            'message' => 'success',
+            'book_id' => $chapter->book_id
         ], 200);
     }
 
@@ -106,7 +131,7 @@ class ChapterController extends Controller
     {
         $chapter = $this->chapters->find($id);
 
-        if(!$chapter && !$chapter->delete()) {
+        if(!$chapter || !$chapter->delete()) {
             return response()->json([
                 'errors' => [
                     'root' => [

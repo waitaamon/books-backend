@@ -1,20 +1,28 @@
 <template>
-  <p>Homepage</p>
+  <div>
+    <homepage-featured></homepage-featured>
+    <all-books></all-books>
+  </div>
 </template>
 
 <script>
-  import {mapGetters, mapActions} from 'vuex'
+  import {mapActions} from 'vuex'
+  import HomepageFeatured from './partials/HomepageFeatured'
+  import AllBooks from './partials/AllBooks'
 
   export default {
     name: 'home-page',
+    components: {AllBooks, HomepageFeatured},
     data() {
       return {}
     },
-    computed: {
-      ...mapGetters({})
-    },
     methods: {
-      ...mapActions({})
+      ...mapActions({
+        getBooks: 'web/getBooks'
+      })
+    },
+    created () {
+      this.getBooks()
     }
   }
 </script>

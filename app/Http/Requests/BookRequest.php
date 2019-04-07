@@ -28,6 +28,7 @@ class BookRequest extends FormRequest
             'author' => 'required|string|max:100',
             'publisher' => 'required|string|max:100',
             'language' => 'required|integer|exists:languages,id',
+            'description' => 'required|string|max:300',
             'genres' => 'required',
             'topics' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png'

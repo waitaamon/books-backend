@@ -1,6 +1,5 @@
 <template>
     <div>
-        {{ authenticated }}
         <authenticated-view v-if="authenticated"></authenticated-view>
         <unauthenticated-view v-else></unauthenticated-view>
     </div>

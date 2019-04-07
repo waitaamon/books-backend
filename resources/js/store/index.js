@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import auth from '../app/auth/vuex'
-import home from '../app/web/vuex'
+import web from '../app/web/vuex'
 import book from '../app/admin/books/vuex'
 import chapter from '../app/admin/chapters/vuex'
 import language from '../app/admin/languages/vuex'
@@ -24,7 +24,7 @@ export default new Vuex.Store({
   getters,
   modules: {
     auth,
-    home,
+    web,
     book,
     chapter,
     language,

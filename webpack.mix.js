@@ -17,6 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
     ], 'public/js/main.js')
     .scripts([
         'public/vendors/admin/js/slick.min.js',
+        'public/vendors/admin/js/select2.min.js',
         'public/vendors/admin/js/wow.min.js',
         'public/vendors/admin/js/perfect-scrollbar.min.js',
         'public/vendors/admin/js/main.js'
@@ -27,6 +28,7 @@ mix.js('resources/js/app.js', 'public/js')
         'public/vendors/admin/css/animate.css',
         'public/vendors/admin/css/hamburgers.min.css',
         'public/vendors/admin/css/slick.css',
+        'public/vendors/admin/css/select2.min.css',
         'public/vendors/admin/css/perfect-scrollbar.css',
         'public/vendors/admin/css/theme.css'
     ], 'public/css/admin.css');

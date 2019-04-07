@@ -29,8 +29,8 @@ export const updateBook = ({ commit }, payload) => {
     })
 }
 
-export const deleteBook = ({ commit }, payload) => {
-  return window.axios.delete('/api/books/' + payload.id)
+export const deleteBook = ({ commit }, id) => {
+  return window.axios.delete('/api/books/' + id)
     .then( response => {
       // set books
       commit('setBooks', response.data)
@@ -39,6 +39,14 @@ export const deleteBook = ({ commit }, payload) => {
 
 export const publish = ({ commit }, payload) => {
   return window.axios.post('/api/book/publish/' + payload.id, payload)
+    .then( response => {
+      // set book
+      commit('setBook', response.data)
+    })
+}
+
+export const featured = ({ commit }, payload) => {
+  return window.axios.post('/api/book/feature/' + payload.id, payload)
     .then( response => {
       // set book
       commit('setBook', response.data)

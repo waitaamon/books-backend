@@ -1,8 +1,8 @@
-export const addChapter = ({ dispatch }, payload) => {
+export const addChapter = ({ commit }, payload) => {
   return window.axios.post('/api/chapters', payload)
     .then(response => {
     // set chapter
-    dispatch('setChapter', response.data )
+    commit('setChapter', response.data )
   })
 }
 
