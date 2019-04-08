@@ -86,7 +86,9 @@
         },
         watch: {
             books: function(newVal, oldVal) {
-                this.$refs.vuetable.refresh();
+                if(this.$refs.vuetable) {
+                    this.$refs.vuetable.refresh();
+                }
             }
         },
         computed: {

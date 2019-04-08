@@ -23,7 +23,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="body" class="control-label mb-1">Body</label>
-                                <textarea id="body" cols="30" class="form-control" v-model="form.body"></textarea>
+                                <!--<textarea id="body" cols="30" class="form-control" v-model="form.body"></textarea>-->
+                                <tinymce id="body" v-model="form.body"></tinymce>
                                 <small class="text-danger" v-if="errors.body">{{errors.body[0]}}</small>
                             </div>
                             <div class="row">
@@ -51,8 +52,12 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex'
+    import tinymce from 'vue-tinymce-editor'
     export default {
         name: 'edit-page',
+        components: {
+            tinymce
+        },
         data() {
             return {
                 form: {
