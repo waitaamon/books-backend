@@ -1,4 +1,5 @@
 export default {
   validation: [],
-  loading: false
+  loading: false,
+  mobileView: false
 }

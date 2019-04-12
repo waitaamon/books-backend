@@ -9,3 +9,6 @@ export const clearValidationErrors = ({ commit }) => {
 export const setLoading = ({ commit }, trueOrFalse) => {
     commit('setLoading', trueOrFalse)
 }
+export const setMobileView = ({ commit }, trueOrFalse) => {
+    commit('setMobileView', trueOrFalse)
+}

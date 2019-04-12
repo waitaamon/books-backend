@@ -3,8 +3,9 @@
  */
 
 import web from './web/routes'
+import mobile from './mobile/routes'
 import auth from './auth/routes'
 import admin from './admin'
 import errors from './errors/routes'
 
-export default [ ...web, ...auth, ...admin, ...errors ]
+export default [ ...web, ...mobile, ...auth, ...admin, ...errors ]
