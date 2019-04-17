@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div v-if="!mobileView">
-            <authenticated-view v-if="authenticated"></authenticated-view>
-            <unauthenticated-view v-else></unauthenticated-view>
+        <div v-if="mobileView">
+            <mobile-view></mobile-view>
         </div>
         <div v-else>
-            <mobile-view></mobile-view>
+            <authenticated-view v-if="authenticated"></authenticated-view>
+            <unauthenticated-view v-else></unauthenticated-view>
         </div>
     </div>
 

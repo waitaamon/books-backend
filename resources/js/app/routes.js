@@ -8,4 +8,4 @@ import auth from './auth/routes'
 import admin from './admin'
 import errors from './errors/routes'
 
-export default [ ...web, ...mobile, ...auth, ...admin, ...errors ]
+export default [ ...web, ...auth, ...admin, ...errors ]

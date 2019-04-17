@@ -13,11 +13,11 @@
                     <div class="overview__inner">
                         <div class="overview-box clearfix">
                             <div class="icon">
-                                <i class="zmdi zmdi-account-o"></i>
+                                <i class="zmdi zmdi-book"></i>
                             </div>
                             <div class="text pb-4">
-                                <h2>15</h2>
-                                <span>Books</span>
+                                <h2>{{ stats ? stats.books_count: 0}}</h2>
+                                <span>books</span>
                             </div>
                         </div>
                     </div>
@@ -28,11 +28,11 @@
                     <div class="overview__inner">
                         <div class="overview-box clearfix">
                             <div class="icon">
-                                <i class="zmdi zmdi-shopping-cart"></i>
+                                <i class="zmdi zmdi-thumb-up"></i>
                             </div>
                             <div class="text pb-4">
-                                <h2>15</h2>
-                                <span>Books</span>
+                                <h2>{{ stats ? stats.published_books_count: 0}}</h2>
+                                <span>published</span>
                             </div>
                         </div>
                     </div>
@@ -43,11 +43,11 @@
                     <div class="overview__inner">
                         <div class="overview-box clearfix">
                             <div class="icon">
-                                <i class="zmdi zmdi-calendar-note"></i>
+                                <i class="zmdi zmdi-thumb-down"></i>
                             </div>
                             <div class="text pb-4">
-                                <h2>1,086</h2>
-                                <span>this week</span>
+                                <h2>{{ stats ? stats.unpublished_books_count: 0}}</h2>
+                                <span>unpublished</span>
                             </div>
                         </div>
                     </div>
@@ -58,15 +58,23 @@
                     <div class="overview__inner">
                         <div class="overview-box clearfix">
                             <div class="icon">
-                                <i class="zmdi zmdi-money"></i>
+                                <i class="zmdi zmdi-account-o"></i>
                             </div>
                             <div class="text pb-4">
-                                <h2>10</h2>
-                                <span>total earnings</span>
+                                <h2>{{ stats ? stats.users_count: 0}}</h2>
+                                <span>users</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row m-t-25">
+            <div class="col-sm-6">
+                <router-link :to="{name: 'create-book'}" class="btn btn-primary btn-block">CREATE NEW BOOK</router-link>
+            </div>
+            <div class="col-sm-6">
+                <router-link :to="{name: 'gallery'}" class="btn btn-info btn-block">GALLERY</router-link>
             </div>
         </div>
     </div>
@@ -81,10 +89,17 @@
             return {}
         },
         computed: {
-            ...mapGetters({})
+            ...mapGetters({
+                stats: 'dashboard/stats'
+            })
         },
         methods: {
-            ...mapActions({})
+            ...mapActions({
+                getPrerequisites: 'dashboard/getPrerequisites'
+            })
+        },
+        created () {
+            this.getPrerequisites()
         }
     }
 </script>

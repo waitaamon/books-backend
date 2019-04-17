@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-8 offset-2 pt-5 pb-5">
+            <div class="col-10 offset-1 pt-5 pb-5">
                 <h3 class="text-center">{{ chapter ? chapter.title: '' }}</h3>
                 <p class="font-italic text-secondary text-center">{{ chapter ? chapter.sub_title : ''}}</p>
                 <span class="mt-5" v-html="chapter ? chapter.body: ''"></span>

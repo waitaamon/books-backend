@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 import auth from '../app/auth/vuex'
 import web from '../app/web/vuex'
+import dashboard from '../app/admin/dashboard/vuex'
 import book from '../app/admin/books/vuex'
 import chapter from '../app/admin/chapters/vuex'
 import language from '../app/admin/languages/vuex'
@@ -26,6 +27,7 @@ export default new Vuex.Store({
   modules: {
     auth,
     web,
+    dashboard,
     book,
     chapter,
     language,

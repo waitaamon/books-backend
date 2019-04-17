@@ -23,8 +23,13 @@ Route::get('all-books', 'WebController@index');
 //get book
 Route::get('book/{id}', 'WebController@show_book');
 
+Route::get('mobile/book/{id}', 'WebController@show_book');
+
 //get chapter
 Route::get('chapter/{id}', 'WebController@show_chapter');
+
+//get prerequisites
+Route::get('getPrerequisites', 'admin\DashboardController@prerequisites');
 
 //protect login users
 Route::group(['middleware' => 'jwt.auth'], function (){
