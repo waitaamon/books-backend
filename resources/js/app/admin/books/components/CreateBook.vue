@@ -100,6 +100,7 @@
             submit () {
                 let formData = new FormData();
 
+                formData.append('action', 'create')
                 formData.append('title', this.form.title)
                 formData.append('author', this.form.author)
                 formData.append('publisher', this.form.publisher)

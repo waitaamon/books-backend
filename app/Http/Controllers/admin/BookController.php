@@ -145,7 +145,7 @@ class BookController extends Controller
             'author' => $request->author == $book->author ? $book->author : $request->author,
             'publisher' => $request->publisher == $book->publisher ? $book->publisher : $request->publisher,
             'description' => $request->description == $book->description ? $book->description : $request->description,
-            'language_id' => $request->language == $book->language ? $book->language : $request->language
+            'language_id' => $request->language == $book->language_id ? $book->language_id : $request->language
         ]);
 
         if(!$update) {

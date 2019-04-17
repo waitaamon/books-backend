@@ -24,6 +24,7 @@ class BookRequest extends FormRequest
     public function rules()
     {
         return [
+            'action' => 'required|string',
             'title' => 'required|string|max:255',
             'author' => 'required|string|max:100',
             'publisher' => 'required|string|max:100',
@@ -31,7 +32,7 @@ class BookRequest extends FormRequest
             'description' => 'required|string|max:300',
             'genres' => 'required',
             'topics' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png'
+            'image' => 'required_if:action,create|mimes:jpeg,jpg,png'
         ];
     }
 }

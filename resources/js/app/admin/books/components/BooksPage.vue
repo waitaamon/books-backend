@@ -141,7 +141,7 @@
             },
             onActionClicked(action, data) {
                if(action === 'edit') {
-
+                    this.$router.replace({name: 'editBook', query: {ref: data.id}})
                } else if(action === 'delete') {
                    this.deleteBook(data.id)
                }
