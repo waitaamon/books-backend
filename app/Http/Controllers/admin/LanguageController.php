@@ -55,9 +55,9 @@ class LanguageController extends Controller
             ], 422);
         }
 
-        return response()->json([
-            'message' => 'success'
-        ], 200);
+        $languages = $this->languages->all();
+
+        return response(LanguageResource::collection($languages), 200);
     }
 
     /**
@@ -93,9 +93,9 @@ class LanguageController extends Controller
             ], 422);
         }
 
-        return response()->json([
-            'message' => 'success'
-        ], 200);
+        $languages = $this->languages->all();
+
+        return response(LanguageResource::collection($languages), 200);
     }
 
     /**

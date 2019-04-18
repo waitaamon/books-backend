@@ -3,7 +3,7 @@
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="overview-wrap">
-                    <h2 class="title-1">Gallery</h2>
+                    <h4 class="h4">Gallery</h4>
                     <button class="btn btn-outline-info" @click="showImage = !showImage ">{{ showImage ? 'close' : 'add image'}}</button>
                 </div>
             </div>

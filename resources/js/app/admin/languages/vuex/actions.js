@@ -1,8 +1,8 @@
-export const addLanguage = ({ dispatch }, payload) => {
+export const addLanguage = ({ commit }, payload) => {
   return window.axios.post('/api/languages', payload)
     .then(response => {
     // set languages
-      dispatch('setLanguages', response.data)
+      commit('setLanguages', response.data)
     })
 }
 

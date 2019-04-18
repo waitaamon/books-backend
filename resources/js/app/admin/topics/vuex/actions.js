@@ -1,8 +1,8 @@
-export const addTopic = ({dispatch}, payload) => {
+export const addTopic = ({commit}, payload) => {
   return window.axios.post('/api/topics', payload)
     .then(response => {
       // set topics
-      dispatch('setTopics', response.data)
+      commit('setTopics', response.data)
     })
 }
 

@@ -9,14 +9,27 @@
             <nav class="navbar-sidebar">
                 <ul class="list-unstyled navbar__list">
                     <li>
-                        <router-link to="/admin/dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</router-link>
+                        <router-link to="/admin/dashboard"><i class="fas fa-grip-horizontal"></i>Dashboard</router-link>
                     </li>
                     <li>
-                        <router-link to="/admin/books"><i class="fas fa-chart-bar"></i>Books</router-link>
+                        <router-link to="/admin/books">
+                            <i class="fas fa-book-open"></i>Books</router-link>
                     </li>
                     <li>
                         <router-link to="/admin/gallery">
-                            <i class="fas fa-table"></i>Gallery</router-link>
+                            <i class="fas fa-images"></i>Gallery</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/admin/genres">
+                            <i class="far fa-list-alt"></i>Genres</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/admin/topics">
+                            <i class="fab fa-black-tie"></i>Topics</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/admin/languages">
+                            <i class="fas fa-autoprefixer"></i>Languages</router-link>
                     </li>
                 </ul>
             </nav>

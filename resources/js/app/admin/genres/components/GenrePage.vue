@@ -2,14 +2,16 @@
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12">
+                <div class="overview-wrap">
+                    <h4 class="h4">Genres</h4>
+                    <button class="btn btn-outline-secondary" @click="showAdd = !showAdd">{{ showAdd ? 'Close' : 'Add Genre'}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-10"></div>
-                            <div class="col-2">
-                                <button class="btn-block btn btn-outline-secondary" @click="showAdd = !showAdd">{{ showAdd ? 'Close' : 'Add'}}</button>
-                            </div>
-                        </div>
                         <div class="row" v-show="showAdd">
                             <div class="col-12">
                                 <create-genre></create-genre>

@@ -2,7 +2,7 @@ import { GenrePage } from '../components'
 
 export default [
     {
-        path: '/admin/genre',
+        path: '/admin/genres',
         component: GenrePage,
         name: 'genre',
         meta: {

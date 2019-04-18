@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="overview-wrap">
-                    <h2 class="title-5">overview</h2>
+                    <h4 class="h4">Dashboard</h4>
                 </div>
             </div>
         </div>

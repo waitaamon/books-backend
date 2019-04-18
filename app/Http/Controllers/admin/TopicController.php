@@ -57,9 +57,9 @@ class TopicController extends Controller
             ], 422);
         }
 
-        return response()->json([
-            'message' => 'success'
-        ], 200);
+        $topics = $this->topics->all();
+
+        return response(TopicResource::collection($topics), 200);
     }
 
     /**
@@ -95,9 +95,9 @@ class TopicController extends Controller
             ], 422);
         }
 
-        return response()->json([
-            'message' => 'success'
-        ], 200);
+        $topics = $this->topics->all();
+
+        return response(TopicResource::collection($topics), 200);
     }
 
     /**

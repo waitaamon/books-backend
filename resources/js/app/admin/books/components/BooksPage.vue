@@ -3,7 +3,7 @@
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="overview-wrap">
-                    <h2 class="title-1">overview</h2>
+                    <h4 class="h4">Books</h4>
                     <router-link class="au-btn au-btn-icon au-btn--blue" to="/admin/book/create"><i class="zmdi zmdi-plus"></i>add Book</router-link>
                 </div>
             </div>

@@ -9,7 +9,7 @@
                         <div class="account-wrap">
                             <div class="account-item clearfix js-item-menu">
                                 <div class="content">
-                                    <p class="">{{ user.name }} &nbsp; <button class="btn btn-outline-danger btn-sm" @click="signout">Logout</button></p>
+                                    <p class="">{{ user.name }} &nbsp;&nbsp; <i class="fas fa-sign-out-alt" @click="signout"></i></p>
                                 </div>
                             </div>
                         </div>
