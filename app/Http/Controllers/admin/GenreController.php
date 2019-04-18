@@ -57,9 +57,9 @@ class GenreController extends Controller
             ], 422);
         }
 
-        return response()->json([
-            'message' => 'success'
-        ], 200);
+        $genres = $this->genres->all();
+
+        return response(GenreResource::collection($genres), 200);
     }
 
     /**

@@ -24,8 +24,15 @@ class GenreRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|max: 100',
+            'title' => 'required|string|max:100|unique:genres,title',
             'description' => 'nullable|string|max:255'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'title.unique' => 'This title already exists'
         ];
     }
 }

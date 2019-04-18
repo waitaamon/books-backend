@@ -1,22 +1,14 @@
-export const addGenre = ({ dispatch }, payload) => {
+export const addGenre = ({ commit }, payload) => {
   return window.axios.post('/api/genres', payload)
     .then(response => {
     // set genres
-    dispatch('setGenres', response.data)
+    commit('setGenres', response.data)
     
   })
 }
 
 export const getGenres = ({ commit }) => {
   return window.axios.get('/api/genres')
-    .then(response => {
-      // set genres
-      commit('setGenres', response.data)
-    })
-}
-
-export const updateGenre = ({ commit }, payload) => {
-  return window.axios.patch('/api/genres/' + payload.id, payload)
     .then(response => {
       // set genres
       commit('setGenres', response.data)
