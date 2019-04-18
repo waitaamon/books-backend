@@ -17,7 +17,8 @@ class GenreResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'description' => $this->description
+            'description' => $this->description,
+            'books' => BookResource::collection($this->books)
         ];
     }
 }

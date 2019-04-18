@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\BookResource;
 use App\Http\Resources\ChapterResource;
+use App\Http\Resources\GenreResource;
+use App\Http\Resources\TopicResource;
 use App\Repositories\Contracts\BookRepository;
 use App\Repositories\Contracts\ChapterRepository;
+use App\Repositories\Contracts\GenreRepository;
+use App\Repositories\Contracts\TopicRepository;
 use Illuminate\Contracts\Routing\ResponseFactory;
 
 class WebController extends Controller
@@ -18,16 +22,40 @@ class WebController extends Controller
      * @var ChapterRepository
      */
     protected $chapters;
+    /**
+     * @var GenreRepository
+     */
+    protected $genres;
+    /**
+     * @var TopicRepository
+     */
+    private $topics;
 
     /**
      * WebController constructor.
      * @param BookRepository $books
      * @param ChapterRepository $chapters
+     * @param GenreRepository $genres
+     * @param TopicRepository $topics
      */
-    public function __construct(BookRepository $books, ChapterRepository $chapters)
+    public function __construct(BookRepository $books, ChapterRepository $chapters, GenreRepository $genres, TopicRepository $topics)
     {
         $this->books = $books;
         $this->chapters = $chapters;
+        $this->genres = $genres;
+        $this->topics = $topics;
+    }
+
+    public function prerequisites()
+    {
+        $genres = $this->genres->all();
+
+        $topics = $this->topics->all();
+
+        return response()->json([
+            'topics' => TopicResource::collection($topics),
+            'genres' => GenreResource::collection($genres)
+        ], 200);
     }
 
     /**

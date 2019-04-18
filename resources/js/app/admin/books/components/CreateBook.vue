@@ -21,29 +21,47 @@
                         <input type="text" id="publisher" placeholder="Enter publisher ..." class="form-control" v-model="form.publisher">
                         <small v-if="errors.publisher" class="help-block text-danger text-sm-left">{{ errors.publisher[0]}}</small>
                     </div>
-                    <div class="form-group">
-                        <label for="language" class=" form-control-label">Select language</label>
-                        <multiselect v-model="form.language" :options="languages" label="title" placeholder="select language..."></multiselect>
-                        <small v-if="errors.language" class="help-block text-danger text-sm-left">{{ errors.language[0]}}</small>
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="form-group">
+                                <label for="language" class=" form-control-label">Select language</label>
+                                <multiselect v-model="form.language" :options="languages" label="title" placeholder="select language..."></multiselect>
+                                <small v-if="errors.language" class="help-block text-danger text-sm-left">{{ errors.language[0]}}</small>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <router-link class="btn btn-outline-secondary btn-block btn-sm mt-4-5" :to="{name: 'language'}">
+                                <i class="fa fa-plus"></i>
+                            </router-link>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-10">
+                        <div class="col-11">
                             <div class="form-group">
                                 <label for="genre" class=" form-control-label">Select genres</label>
                                 <multiselect v-model="form.genres" :options="genres" :multiple="true" label="title" track-by="id" placeholder="select genres..."></multiselect>
                                 <small v-if="errors.genres" class="help-block text-danger text-sm-left">{{ errors.genres[0]}}</small>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-2">
-                            <router-link class="btn btn-outline-secondary btn-block mt-4-5" :to="{name: 'genre'}">
+                        <div class="col-1">
+                            <router-link class="btn btn-outline-secondary btn-block btn-sm mt-4-5" :to="{name: 'genre'}">
                                 <i class="fa fa-plus"></i>
                             </router-link>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="topic" class=" form-control-label">Select topics</label>
-                        <multiselect v-model="form.topics" :options="topics" :multiple="true" label="title" track-by="id" placeholder="select topics..."></multiselect>
-                        <small v-if="errors.topics" class="help-block text-danger text-sm-left">{{ errors.topics[0]}}</small>
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="form-group">
+                                <label for="topic" class=" form-control-label">Select topics</label>
+                                <multiselect v-model="form.topics" :options="topics" :multiple="true" label="title" track-by="id" placeholder="select topics..."></multiselect>
+                                <small v-if="errors.topics" class="help-block text-danger text-sm-left">{{ errors.topics[0]}}</small>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <router-link class="btn btn-outline-secondary btn-block btn-sm mt-4-5" :to="{name: 'topic'}">
+                                <i class="fa fa-plus"></i>
+                            </router-link>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="image" class=" form-control-label">Featured image</label>
